@@ -2,9 +2,9 @@
 
 Starting point for creating python based ASGI HTTP server
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Requirements
+You need Python 3.6 or later to run starlette-boilerplate.  
+Python packages are available at http://www.python.org/getit/
 
 ## Running the tests
 
