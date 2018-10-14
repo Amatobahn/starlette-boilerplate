@@ -1,0 +1,7 @@
+starlette
+uvicorn
+python-multipart
+
+# Optionals
+requests
+ujson
