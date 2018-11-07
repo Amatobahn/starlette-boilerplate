@@ -1,4 +1,5 @@
 from starlette.applications import Starlette
+from starlette.staticfiles import StaticFiles
 import uvicorn
 
 
@@ -29,6 +30,9 @@ class StarletteServer(object):
 
     def add_route(self, route: Route):
         self.server.add_route(route.path, route.function, route.methods)
+    
+    def add_static_file_directory(self, directory: str):
+        self.server.mount(f"/{directory}", app=StaticFiles(directory=directory))
 
     def run(self):
         uvicorn.run(self.server, host=self.ip, port=self.port)
